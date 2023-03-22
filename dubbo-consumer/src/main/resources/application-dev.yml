@@ -1,0 +1,25 @@
+nacos:
+  discovery:
+    server-addr: 127.0.0.1:8848
+  config:
+    server-addr: 127.0.0.1:8848
+dubbo:
+  application:
+    name: dubbo-consumer-demo
+#dubbo 注册中心nacos地址
+  registry:
+    address: nacos://127.0.0.1:8848
+#dubbo 使用的协议名称
+  protocol:
+    name: dubbo
+
+    port: -1
+
+
+demo:
+  service:
+    version: 1.0.0
+    name: demoService
+
+server:
+  port: 9004
