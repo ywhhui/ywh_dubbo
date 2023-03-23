@@ -18,3 +18,10 @@ demo:
   service:
     version: 1.0.0
     name: demoService
+
+server:
+  port: 9005
+
+spring:
+  application:
+    name: ywh-provider
